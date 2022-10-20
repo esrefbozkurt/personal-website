@@ -1,0 +1,7 @@
+* {
+  border-size: border-box;
+}
+
+a::before {
+  content: 💻;
+}
