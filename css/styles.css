@@ -17,6 +17,10 @@ body {
   height: auto;
 }
 
+img{
+width: 25%;
+border-radius: 10px;
+}
 .bg-image {
   position: absolute;
   background-image: url("../assets/DSC04371\ \(2\).jpg");
@@ -29,12 +33,25 @@ body {
   filter: blur (8px);
   -webkit-filter: blur(8px);
   z-index: -1;
-  margin: var(--gap);
-  padding: var(--gap);
+}
+
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
 .header {
-  opacity: 0.6;
   background-color: lemonchiffon;
   border-radius: 5px;
   text-align: center;
@@ -74,7 +91,7 @@ body {
     image-size: ;
   }
 }
-h1 {
+h1 
   text-align: center;
   font-style: "Lato";
   font-style: bold;
@@ -84,6 +101,27 @@ h1 {
 .nav {
 }
 
-a::before {
-  content: 💻;
+a:link {
+  color: skyblue;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: black;
+}
+
+a:active {
+  color: orange;
+}
+
+a [href^="about"]::before {
+  content: " 💻";
+  background-color: silver;
+}
+
+.list > ul {
+  list-style-type: none;
 }
