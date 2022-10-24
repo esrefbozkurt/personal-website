@@ -72,6 +72,7 @@ right: 200px;
   margin: var(--gap);
   padding: var(--gap);
   display: flex;
+  position: relative;
 }
 
 .about_me {
