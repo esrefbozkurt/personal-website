@@ -72,7 +72,10 @@ right: 200px;
   margin: var(--gap);
   padding: var(--gap);
   display: flex;
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 874f6797347c1408db499e60aa51fddea6814f05
 }
 
 .about_me {
